@@ -1,0 +1,149 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background: cadetblue;
+  color: #fff;
+  .big-title {
+    font-size: 3em;
+  }
+  @media(max-width: 720px)
+  {
+    height: 250px;
+    .big-title {
+      font-size: 2.5em;
+    }
+  }
+  @media(max-width: 480px)
+  {
+    height: 200px;
+    .big-title {
+      font-size: 2em;
+    }
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 14px;
+    .item {
+      background: #2196f3;
+      border-radius: 8px;
+      padding: 5px 10px;
+      margin: 5px;
+      a {
+        color: #fff;
+        text-decoration: auto;
+      }
+    }
+  }
+  .content {
+    margin: auto;
+    max-width: 960px;
+    overflow-x: hidden;
+    width: 100%;
+    .section-header {
+      display: flex;
+      flex-direction: row;
+      height: 60px;
+      align-items: center;
+      background: #eee;
+      .section-bar {
+        width: 15px;
+        height: 100%;
+        background: #2196f3;
+      }
+      .section-text {
+        flex:auto;
+        text-align: center;
+        margin-left: 10px;
+        font-size: 24px;
+      }
+    }
+    .section-sec-header {
+      display: flex;
+      height: 40px;
+      justify-content: right;
+      .author-name {
+        font-size: 16px;
+      }
+      margin-bottom: 15px;
+    }
+    @media (min-width: 480px)
+    {
+      width: 460px;
+    }
+    @media (min-width: 960px)
+    {
+      width: 640px;
+    }
+    @media (min-width: 1080px)
+    {
+      width: 720px;
+    }
+    img {
+      display: flex;
+      max-width: 768px;
+      object-fit: contain;
+      width: 40vw;
+      @media (max-width: 640px)
+      {
+        width: auto;
+        max-width: 75vw;
+      }
+      @media (max-width: 480px)
+      {
+        width: auto;
+        max-width: 80vw;
+      }
+    }
+  }
+  .sort-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: 40px;
+    background: #eee;
+    .sort-bar {
+      width: 12px;
+      height: 100%;
+      background: #ffc107;
+      margin-right: 10px;
+    }
+    .sort-text {
+      font-size: 20px;
+    }
+  }
+  .card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    .card-item {
+      margin: 10px;
+      @media (max-width: 1000px)
+      {
+        max-width: 360px;
+      }
+      @media (max-width: 780px)
+      {
+        max-width: 230px;
+      }
+      @media (max-width: 580px)
+      {
+        max-width: unset;
+        width: 100%;
+      }
+    }
+  }
+}

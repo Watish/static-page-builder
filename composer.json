@@ -1,0 +1,22 @@
+{
+    "name": "watish/static-page-builder",
+    "description": "A project which use blade engine to convert markdown to static html files directly.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Watish\\StaticPageBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Watish"
+        }
+    ],
+    "require": {
+        "league/climate": "^3.8",
+        "illuminate/view": "^8.83",
+        "league/flysystem": "^1.0",
+      "ext-json": "*",
+        "erusev/parsedown": "^1.7"
+    }
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>    2023-1-18 - Watish的静态站点
+</title>
+        <link rel="stylesheet" href="/source/prism/prism.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="/source/main.less" />
+</head>
+<body>
+<div class="banner">
+    <div class="big-title">
+        Watish
+    </div>
+</div><div class="container">
+    <div class="navbar">
+    <div class="item">
+        <a href="/">首页</a>
+    </div>
+            <div class="item">
+            <a href="/content/代码笔记/index.html">代码笔记</a>
+        </div>
+            <div class="item">
+            <a href="/content/生活随笔/index.html">生活随笔</a>
+        </div>
+            <div class="item">
+            <a href="/content/项目日志/index.html">项目日志</a>
+        </div>
+    </div>        <div class="content" style="display: flex;justify-content: center;flex-direction: column">
+        <div class="section-header">
+            <div class="section-bar"></div>
+            <div class="section-text">
+                2023-1-18
+            </div>
+        </div>
+        <div class="section-sec-header">
+            撰写于 2023年01月18日
+        </div>
+        <h1>2023-1-18</h1>
+<ol>
+<li>添加了文件监视功能，可通过php cli.php watch打包并监听content,template,source三个目录</li>
+<li>添加了JobQueue以防止Blade引擎渲染错乱</li>
+<li>添加了DirDrawer</li>
+</ol>
+    </div>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
+    <script type="text/javascript" src="/source/prism/prism.js"></script>
+</body>
+</html>
