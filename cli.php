@@ -27,7 +27,7 @@ $argvParser = new ArgvParser($argv);
 if($argvParser->has("serve"))
 {
     $shell = "cd ".BASE_DIR.'/output/ ';
-    $shell .= '&& php -S 127.0.0.1:8080';
+    $shell .= '&& php -S 0.0.0.0:8080';
     Logger::info(exec($shell));
 }
 if($argvParser->has("watch"))
