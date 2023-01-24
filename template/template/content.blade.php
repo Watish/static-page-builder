@@ -6,6 +6,19 @@
 @section("header")
     <link rel="stylesheet" href="/source/prism/prism.css">
 @endsection
+@section('bread')
+    <nav aria-label="breadcrumb" style="margin-top: 15px">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">首页</a></li>
+            <li class="breadcrumb-item"><a href="{{ $drawer->fromDirDrawer()->linker("template.dir")->getLink() }}">
+                    {{ $drawer->fromDirDrawer()->getDirName() }}
+                </a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+                {{ $drawer->getName() }}
+            </li>
+        </ol>
+    </nav>
+@endsection
 @section("container")
     <div class="content" style="display: flex;justify-content: center;flex-direction: column">
         <div class="section-header">

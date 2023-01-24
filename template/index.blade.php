@@ -5,7 +5,7 @@
 @section("container")
     <div class="card-list">
         @foreach(\Watish\StaticPageBuilder\Content\ContentCollector::allFiles('/') as $contentDrawer)
-            <div class="card-item">
+            <div class="card-item" style="width: 100%">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">{{$contentDrawer->getName()}}</h5>

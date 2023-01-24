@@ -27,11 +27,12 @@
 .container {
   display: flex;
   flex-direction: column;
+  max-width: 960px;
   .navbar {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 14px;
     .item {
       background: #2196f3;
@@ -110,8 +111,12 @@
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    width: fit-content;
+    padding: 14px;
     height: 40px;
     background: #eee;
+    margin: auto auto 5px;
+
     .sort-bar {
       width: 12px;
       height: 100%;
@@ -131,19 +136,19 @@
     margin: auto;
     .card-item {
       margin: 10px;
-      @media (max-width: 1000px)
-      {
-        max-width: 360px;
-      }
-      @media (max-width: 780px)
-      {
-        max-width: 230px;
-      }
-      @media (max-width: 580px)
-      {
-        max-width: unset;
-        width: 100%;
-      }
+      //@media (max-width: 1000px)
+      //{
+      //  max-width: 360px;
+      //}
+      //@media (max-width: 780px)
+      //{
+      //  max-width: 230px;
+      //}
+      //@media (max-width: 580px)
+      //{
+      //  max-width: unset;
+      //  width: 100%;
+      //}
     }
   }
 }

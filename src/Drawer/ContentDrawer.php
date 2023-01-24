@@ -46,6 +46,29 @@ class ContentDrawer
         return $path[count($path)-2];
     }
 
+    public function fromDirDrawer() :DirDrawer
+    {
+        $path = $this->path;
+        Logger::info($path);
+        if(!str_contains($path,'/'))
+        {
+            $res = '/';
+        }else{
+            $path = explode('/',$path);
+            $res = '';
+            for($i=0;$i<(count($path)-1);$i++)
+            {
+                $res .= $path[$i];
+                if($i < (count($path)-2))
+                {
+                    $res.= '/';
+                }
+            }
+        }
+        Logger::info($res);
+        return new DirDrawer($res);
+    }
+
     public function getPureText(int $length=0) :string
     {
         $html = $this->getHtml();

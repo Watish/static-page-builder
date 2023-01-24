@@ -4,7 +4,6 @@ namespace Watish\StaticPageBuilder\Drawer;
 
 use Watish\StaticPageBuilder\Constructor\LocalFilesystemConstructor;
 use Watish\StaticPageBuilder\Linker\ContentDirLinker;
-use Watish\StaticPageBuilder\Linker\ContentPaginatorLinker;
 use Watish\StaticPageBuilder\Util\Logger;
 
 class DirDrawer
@@ -67,7 +66,7 @@ class DirDrawer
         foreach ($resList as $file_path => $modified_time)
         {
             $modified_date = date($format,$modified_time);
-            $resHash[$modified_date] = new ContentDrawer($file_path);
+            $resHash[$modified_date][] = new ContentDrawer($file_path);
         }
         return $resHash;
     }
